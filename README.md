@@ -20,7 +20,8 @@ str_is('foo*', 'foobar')
 str_is('baz*', 'foobar')
 // => false
 
-// Or you can call the "is" method in string instances and pass the pattern...
+// Or you can call the "is" method in string instances and pass the pattern.
+// Note: Make sure you already require this module before call the is method.
 'foobar'.is('foo*')
 // => true
 ```
