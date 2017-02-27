@@ -17,7 +17,7 @@ module.exports = function (pattern, value) {
     return true
   }
 
-  var regexp = new RegExp(pattern.replace('/*', '/.*'))
+  var regexp = new RegExp(pattern.replace('*', '.*'))
 
   return regexp.test(value)
 }
