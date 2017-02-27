@@ -8,7 +8,7 @@
  * @returns {Boolean}
  * @throws  {TypeError}
  */
-module.exports = function (pattern, value) {
+function is(pattern, value) {
   if (typeof pattern !== 'string' || typeof value !== 'string') {
     throw new TypeError('Expected all arguments to be strings')
   }
@@ -22,4 +22,21 @@ module.exports = function (pattern, value) {
   var regexp = new RegExp(pattern)
 
   return regexp.test(value)
+}
+
+if (typeof String.prototype.is === 'undefined') {
+  /**
+   * Add the "is" method to the String class.
+   *
+   * @param   {String}  pattern
+   * @returns {Boolean}
+   * @throws  {TypeError}
+   */
+  String.prototype.is = function (pattern) {
+    return is(pattern, this)
+  }
+}
+
+module.exports = function (pattern, value) {
+  return is(pattern, value)
 }

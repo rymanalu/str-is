@@ -29,4 +29,13 @@ describe('#str_is', function () {
 
     expect(result).to.be.false
   })
+
+  it('can call the "is" method for the String instances', function () {
+    var stringInstancesCanCallIsMethod = function () {
+      return 'foobar'.is('foo*')
+    }
+
+    expect(stringInstancesCanCallIsMethod).to.not.throw(TypeError)
+    expect(stringInstancesCanCallIsMethod()).to.be.true
+  })
 })
