@@ -1,0 +1,29 @@
+{
+  "name": "str-is",
+  "version": "0.0.1",
+  "description": "Determine if a string matches a pattern.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rymanalu/str-is.git"
+  },
+  "keywords": [
+    "string"
+  ],
+  "author": "Roni Yusuf Manalu <rymanalu@gmail.com> (https://github.com/rymanalu)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rymanalu/str-is/issues"
+  },
+  "homepage": "https://github.com/rymanalu/str-is#readme",
+  "engines": {
+    "node": ">=4"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
