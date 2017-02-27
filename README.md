@@ -1,5 +1,4 @@
-# str-is
-[![Build Status](https://travis-ci.org/rymanalu/str-is.svg?branch=master)](https://travis-ci.org/rymanalu/str-is)
+# str-is [![Build Status](https://travis-ci.org/rymanalu/str-is.svg?branch=master)](https://travis-ci.org/rymanalu/str-is)
 
 Determine if a string matches a pattern.
 
