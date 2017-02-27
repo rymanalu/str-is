@@ -14,9 +14,9 @@ var str_is = require('str-is')
 str_is('foo/bar', 'foo/bar')
 // => true
 
-str_is('foo/bar/*', 'foo/bar/baz')
+str_is('foo*', 'foobar')
 // => true
 
-str_is('foo/bar/*', 'foo/baz/bar')
+str_is('baz*', 'foobar')
 // => false
 ```
