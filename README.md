@@ -4,7 +4,7 @@ Determine if a string matches a pattern.
 
 ## Install
 ```
-npm install str-is
+npm install --save str-is
 ```
 
 ## Usage
